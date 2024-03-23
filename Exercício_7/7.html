@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Converter para Caixa Alta</title>
+</head>
+<body>
+
+<input type="text" id="entrada" placeholder="Digite uma string">
+<button onclick="converterParaCaixaAlta()">Converter para Caixa Alta</button>
+<p id="saida"></p>
+
+<script>
+function converterParaCaixaAlta() {
+    // Obtendo o valor digitado no campo de texto
+    var entrada = document.getElementById("entrada").value;
+    
+    // Convertendo a string para caixa alta
+    var saida = entrada.toUpperCase();
+    
+    // Exibindo o resultado na página
+    document.getElementById("saida").textContent = "Aqui está: " + saida;
+}
+</script>
+
+</body>
+</html>
